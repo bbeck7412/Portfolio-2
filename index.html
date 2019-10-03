@@ -21,8 +21,6 @@
     <link rel="stylesheet" href="assets/CSS/animate.css">
 
     <!-- Style -->
-   
-
     <!-- Definity CSS -->
     <link rel="stylesheet" href="assets/CSS/main.css">
     <link rel="stylesheet" href="assets/CSS/responsive.css">
@@ -32,9 +30,7 @@
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
 
-    <!--[if lt IE 8]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
+
     <!-- ========== Preloader ========== -->
 
     <div class="preloader">
@@ -42,7 +38,9 @@
     </div>
 
 
-
+    <!-- Style-->
+    <link href="assets/CSS/shCoreDefault.css" rel="stylesheet" type="text/css" />
+    <link href="assets/CSS/shThemeDefault.css" rel="stylesheet" type="text/css" />
 
     <!-- ========== Navigation ========== -->
 
@@ -102,28 +100,44 @@
         </div><!-- / .bg-overlay -->
     </div><!-- / #home -->
     <!-- ========== About - Section ========== -->
+    <div class="gray-bg">
+        <section id="about" class="container freelancer-about">
+            <div class="row section">
 
-    <section id="about" class="container">
-        <div class="row section">
+                <!-- Freelancer -->
+                <div class="col-lg-offset-2 col-lg-4 col-md-6 mb-sm-50 img-wrapper">
+                    <div class="t-item">
 
-            <header class="sec-heading">
-                <h2> About Me </h2>
-                <!-- <span class="subheading">Lorem ipsum dolor sit amet, consectetur</span> -->
-            </header>
+                        <!-- Image -->
+                        <div class="t-image">
+                            <img src="/assets/Images/H2Front.jpg" alt="Team Member" class="img-responsive">
+                        </div>
 
-            <div class="col-md-4">
-                <blockquote>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    <footer><cite>by Henry Hill</cite></footer>
-                </blockquote>
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolor, hic tempore omnis! Et, quod! Repudiandae itaque necessitatibus, facilis optio debitis incidunt, veniam placeat fuga eos molestiae culpa rem eveniet.</p>
-            </div>
-            <div class="col-md-4">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro dolor, hic tempore omnis! Et, quod! Repudiandae itaque necessitatibus, facilis optio debitis incidunt, veniam placeat fuga eos molestiae culpa rem eveniet.</p>
-            </div>
-    </section><!-- / .container -->
+                        <!-- Info -->
+                        <div class="t-info">
+                            <h4 class="t-name"> Brandon Beck </h4>
+                            <span class="t-role">Software Developer</span>
+                            <ul class="social-links">
+                                <li><a href="https://github.com/bbeck7412"><i class="fa fa-github"></i></a></li>
+                                <li><a href="https://www.linkedin.com/in/brandonmichaelbeck/"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="https://twitter.com/BBeck_02TA"><i class="fa fa-twitter"></i></a></li>
+
+                            </ul>
+                        </div>
+
+                    </div><!-- / .t-item -->
+                </div><!-- / .col-md-4 -->
+
+                <div class="col-lg-4 freelancer-about-content">
+                    <h2 class="t1-heading">About me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <img src="assets/images/signature.png" alt="J.Webb">
+                </div>
+
+            </div><!-- / .row -->
+        </section><!-- / .container -->
+    </div><!-- / .gray-bg -->
     <!-- ========== Coding challenges ========== -->
 
     <div class="gray-bg">
@@ -213,7 +227,7 @@
                 <span class="subheading"> Completed & in-progress projects </span>
             </header>
         </div><!-- / .row -->
-    
+
 
         <div class="row">
             <div id="portfolio">
@@ -501,6 +515,7 @@
                 <div class="row">
 
                     <ul>
+                        <li><a href="https://github.com/bbeck7412"> Github </a></li>
                         <li><a href="https://www.linkedin.com/in/brandonmichaelbeck/">LinkedIn</a> </li>
                         <li><a href="https://twitter.com/BBeck_02TA">Twitter</a></li>
 
@@ -527,289 +542,479 @@
             </div><!-- / .container -->
         </div><!-- / .copyright -->
     </footer><!-- / .footer-contact -->
-   
     <!--Modal place holder-->
     <!-- Button to Open the Modal -->
 
-   
 
-        <div class="modal" id="myModal">
-            <div class=".modal-dialog">
-                <div class="modal-content">
 
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                        <h4 class="modal-title"> CSS Grid Exercise 1 </h4>
-                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    </div>
+    <div class="modal" id="myModal">
+        <div class=".$modal-dialog">
+            <div class="modal-content">
 
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-3"> 1 </div>
-                                <div class="col-md-9"> 2 </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12"> <h2> H2 </h2> </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-2"> 3</div>
-                                <div class="col-md-2"> 4</div>
-                                <div class="col-md-2"> 5</div>
-                                <div class="col-md-2"> 6</div>
-                                <div class="col-md-2"> 7</div>
-                                <div class="col-md-2"> 8</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12"> <h3> H3 </h3></div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-1"> 9</div>
-                                <div class="col-md-1">10</div>
-                                <div class="col-md-1">11</div>
-                                <div class="col-md-1">12</div>
-                                <div class="col-md-1">13</div>
-                                <div class="col-md-1">14</div>
-                                <div class="col-md-1">15</div>
-                                <div class="col-md-1">16</div>
-                                <div class="col-md-1">17</div>
-                                <div class="col-md-1">18</div>
-                                <div class="col-md-1">19</div>
-                                <div class="col-md-1">20</div>
-                            </div>
-                            <div class="row h4">
-                                <div class="col-md-3">H4</div>
-                                <div class="col-md-3">H4</div>
-                                <div class="col-md-6">H4</div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-3">21</div>
-                                <div class="col-md-3">22</div>
-                                <div class="col-md-6">23</div>
-                            </div>
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> CSS Grid Exercise 1 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-3"> 1 </div>
+                            <div class="col-md-9"> 2 </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"> <h2> H2 </h2> </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-2"> 3</div>
+                            <div class="col-md-2"> 4</div>
+                            <div class="col-md-2"> 5</div>
+                            <div class="col-md-2"> 6</div>
+                            <div class="col-md-2"> 7</div>
+                            <div class="col-md-2"> 8</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12"> <h3> H3 </h3></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-1"> 9</div>
+                            <div class="col-md-1">10</div>
+                            <div class="col-md-1">11</div>
+                            <div class="col-md-1">12</div>
+                            <div class="col-md-1">13</div>
+                            <div class="col-md-1">14</div>
+                            <div class="col-md-1">15</div>
+                            <div class="col-md-1">16</div>
+                            <div class="col-md-1">17</div>
+                            <div class="col-md-1">18</div>
+                            <div class="col-md-1">19</div>
+                            <div class="col-md-1">20</div>
+                        </div>
+                        <div class="row h4">
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-3">H4</div>
+                            <div class="col-md-6">H4</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">21</div>
+                            <div class="col-md-3">22</div>
+                            <div class="col-md-6">23</div>
                         </div>
                     </div>
-
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
-
                 </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
             </div>
         </div>
+    </div>
+
+
+    <div class="modal" id="myModal1">
+        <div class=".$modal-dialog ">
+            <div class="modal-content text-center">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> CSS Grid Exercise 2 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-4"> 4 </div>
+                                <div class="col-md-4"> 4 </div>
+                                <div class="col-md-4"> 4 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"> 6 </div>
+                                <div class="col-md-6"> 6 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12"> 12 </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-3"> 3 </div>
+                                <div class="col-md-3"> 3 </div>
+                                <div class="col-md-3"> 3 </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="row">
+                                <div class="col-md-8"> 8 </div>
+                                <div class="col-md-4"> 4 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6"> 6 </div>
+                                <div class="col-md-3"> 3 </div>
+                                <div class="col-md-3"> 3 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2"> 2 </div>
+                                <div class="col-md-3"> 3 </div>
+                                <div class="col-md-2"> 2 </div>
+                                <div class="col-md-3"> 3 </div>
+                                <div class="col-md-2"> 2 </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                                <div class="col-md-1"> 1 </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="myModal2">
+        <div class=".modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Java exercise 3 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class=".modal-body">
+
+                    <div class="container">
+                        <div class="row" id="paddedRow">
+                            <div class="col-lg-12 text-center h2">
+                                Math wizzard
+                            </div>
+                        </div>
+
+                        <hr style="border: 1px solid black" />
+
+
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4 "> <h4> Enter a number </h4> </div>
+                                <div class="col-lg-4">
+                                    <input type="number" id="math1" class="form-control" placeholder="Your number here" />
+                                </div>
+                                <div id='results1' class=" col-lg-4">  Results </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4"> <h4> Enter a number </h4> </div>
+                                <div class="col-lg-4">
+                                    <input type="number" id="math2" class="form-control" placeholder="Your number here" />
+                                </div>
+                                <div id="results2" class=" col-lg-4"> Results </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4"> <h4> Enter a number </h4> </div>
+                                <div class="col-lg-4">
+                                    <input type="number" id="math3" class="form-control" placeholder="Your number here" />
+                                </div>
+                                <div id="results3" class=" col-lg-4"> Results </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4"> <h4> Enter a number </h4> </div>
+                                <div class="col-lg-4">
+                                    <input type="number" id="math4" class="form-control" placeholder="Your number here" />
+                                </div>
+                                <div id="results4" class=" col-lg-4"> Results </div>
+                            </div>
+                        </div>
+
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-4"> <h4> Enter a number </h4> </div>
+                                <div class="col-lg-4">
+                                    <input type="number" id="math5" class="form-control" placeholder="Your number here" />
+                                </div>
+                                <div id="results5" class=" col-lg-4"> Results </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <button id='GoMath' type="button" class="btn btn-info"> Go! </button>
+                            <button id="" type="button" class="btn btn-danger"> Reset </button>
+                            <button id="" type="button" class=" btn btn-warning"> Show code </button>
+                            <button id="" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="myModal3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Java exercise 4 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="container">
+
+                    </div>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="myModal4">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Java exercise 5 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal" id="myModal5">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> Java exercise 6 </h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ========== Scripts ========== -->
+
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/google-fonts.js"></script>
+    <script src="assets/js/jquery.easing.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
+    <script src="assets/js/jquery.localScroll.min.js"></script>
+    <script src="assets/js/jquery.scrollTo.min.js"></script>
+    <script src="assets/js/jquery.stellar.min.js"></script>
+    <script src="assets/js/jquery.parallax.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="assets/js/jquery.easypiechart.min.js"></script>
+    <script src="assets/js/countup.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/jquery.ajaxchimp.js"></script>
+    <script src="assets/js/animDots.js"></script>
+    <script type="text/javascript" src="assets/JS/shCore.js"></script>
+    <script type="text/javascript" src="assets/JS/shBrushJScript.js"></script>
+    <script type="text/javascript"> SyntaxHighlighter.all()</script>
+   
     
+    <script>
 
-            <div class="modal" id="myModal1">
-                <div class=".modal-dialog small">
-                    <div class="modal-content text-center">
+        // Jquery click event
 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title"> CSS Grid Exercise 2 </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                           <div class="container">
-                               <div class="col-md-4">
-                                   <div class="row">
-                                       <div class="col-md-4"> 4 </div>
-                                       <div class="col-md-4"> 4 </div>
-                                       <div class="col-md-4"> 4 </div>
-                                   </div>
-                                   <div class="row">
-                                       <div class="col-md-6"> 6 </div>
-                                       <div class="col-md-6"> 6 </div>
-                                   </div>
-                                   <div class="row">
-                                       <div class="col-md-12"> 12 </div>
-                                   </div>
-
-                               </div>
-                               <div class="col-md-4">
-                                   <div class="row">
-                                       <div class="col-md-3"> 3 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                   </div>
-                               </div>
-                               <div class="col-md-4">
-                                   <div class="row">
-                                       <div class="col-md-8"> 8 </div>
-                                       <div class="col-md-4"> 4 </div>
-                                   </div>
-                                   <div class="row">
-                                       <div class="col-md-6"> 6 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                   </div>
-                                   <div class="row">
-                                       <div class="col-md-2"> 2 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                       <div class="col-md-2"> 2 </div>
-                                       <div class="col-md-3"> 3 </div>
-                                       <div class="col-md-2"> 2 </div>
-                                   </div>
-                                   <div class="row">
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                       <div class="col-md-1"> 1 </div>
-                                   </div>
-                               </div>
-
-                           </div>
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+        $('#GoMath').click(function () {
+            //Sum
+            var Num1 = Number($('#math1').val());
+            var Num2 = Number($('#math2').val());
+            var Num3 = Number($('#math3').val());
+            var Num4 = Number($('#math4').val());
+            var Num5 = Number($('#math5').val());
 
 
-            <div class="modal" id="myModal2">
-                <div class=".modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title"> Java exercise 3 </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            var sum = Num1 + Num2 + Num3 + Num4 + Num5;
 
 
-            <div class="modal" id="myModal3">
-                <div class=".modal-dialog">
-                    <div class="modal-content">
+            var output = ' The total sum of all the numbers ' + sum;
+            $('#results1').text(output);
 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title"> Java exercise 4 </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Modal body..
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            //Product 
+            var Num1 = Number($('#math1').val());
+            var Num2 = Number($('#math2').val());
+            var Num3 = Number($('#math3').val());
+            var Num4 = Number($('#math4').val());
+            var Num5 = Number($('#math5').val());
 
 
-            <div class="modal" id="myModal4">
-                <div class=".modal-dialog">
-                    <div class="modal-content">
-
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title"> Java exercise 5 </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Modal body..
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            var product = Num1 * Num2 * Num3 * Num4 * Num5;
 
 
-            <div class="modal" id="myModal5">
-                <div class=".modal-dialog">
-                    <div class="modal-content">
+            var output = ' The total product of all the numbers ' + product;
+            $('#results2').text(output);
 
-                        <!-- Modal Header -->
-                        <div class="modal-header">
-                            <h4 class="modal-title"> Java exercise 6 </h4>
-                            <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        </div>
-
-                        <!-- Modal body -->
-                        <div class="modal-body">
-                            Modal body..
-                        </div>
-
-                        <!-- Modal footer -->
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
+            //Smallest Number
+            var Num1 = Number($('#math1').val());
+            var Num2 = Number($('#math2').val());
+            var Num3 = Number($('#math3').val());
+            var Num4 = Number($('#math4').val());
+            var Num5 = Number($('#math5').val());
 
 
-            <!-- ========== Scripts ========== -->
+            var smallest = Math.min(Num1, Num2, Num3, Num4, Num5);
 
-            <script src="assets/js/jquery-2.1.4.min.js"></script>
-            <script src="assets/js/google-fonts.js"></script>
-            <script src="assets/js/jquery.easing.js"></script>
-            <script src="assets/js/jquery.waypoints.min.js"></script>
-            <script src="assets/js/bootstrap.min.js"></script>
-            <script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
-            <script src="assets/js/jquery.localScroll.min.js"></script>
-            <script src="assets/js/jquery.scrollTo.min.js"></script>
-            <script src="assets/js/jquery.stellar.min.js"></script>
-            <script src="assets/js/jquery.parallax.js"></script>
-            <script src="assets/js/slick.min.js"></script>
-            <script src="assets/js/jquery.easypiechart.min.js"></script>
-            <script src="assets/js/countup.min.js"></script>
-            <script src="assets/js/isotope.min.js"></script>
-            <script src="assets/js/jquery.magnific-popup.min.js"></script>
-            <script src="assets/js/wow.min.js"></script>
-            <script src="assets/js/jquery.ajaxchimp.js"></script>
-            <script src="assets/js/animDots.js"></script>
+
+            var output = ' Your smallest number ' + smallest;
+            $('#results3').text(output);
+
+
+            //Biggest Number
+            var Num1 = Number($('#math1').val());
+            var Num2 = Number($('#math2').val());
+            var Num3 = Number($('#math3').val());
+            var Num4 = Number($('#math4').val());
+            var Num5 = Number($('#math5').val());
+
+
+            var smallest = Math.max(Num1, Num2, Num3, Num4, Num5);
+
+
+            var output = ' Your biggest number ' + smallest;
+            $('#results4').text(output);
+
+            //Average Number
+            var Num1 = Number($('#math1').val());
+            var Num2 = Number($('#math2').val());
+            var Num3 = Number($('#math3').val());
+            var Num4 = Number($('#math4').val());
+            var Num5 = Number($('#math5').val());
+
+
+            var smallest = Math.min(Num1, Num2, Num3, Num4, Num5);
+
+
+            var output = ' The smallest number ' + smallest;
+            $('#results3').text(output);
 
 
 
-            <!-- Definity JS -->
-            <script src="assets/js/main.js"></script>
+
+        })
+
+       
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Definity JS -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
-
-
-
-

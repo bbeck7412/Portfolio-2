@@ -195,11 +195,14 @@ _____________________________________________________
 /* --------------------------------------------------
 	0.2 Utility
 -------------------------------------------------- */
-/* .modal-dialog {
-    width: 900px;
-    height 800px; 
-    margin: 800px auto; */
 
+
+
+
+#.container.paddedRow.row.col {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
 
 
 hr {
