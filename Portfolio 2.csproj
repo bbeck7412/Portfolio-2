@@ -115,8 +115,8 @@
     <Content Include="assets\JS\slick.min.js" />
     <Content Include="assets\JS\wow.min.js" />
     <Content Include="assets\PHP\contact-form.php" />
-    <Content Include="assets\CSS\shCore.css" />
-    <Content Include="assets\CSS\shCoreDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shCore.css" />
+    <Content Include="Content\SyntaxHighlighter\shCoreDefault.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreDjango.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreEclipse.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreEmacs.css" />
@@ -124,7 +124,7 @@
     <Content Include="Content\SyntaxHighlighter\shCoreMDUltra.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreMidnight.css" />
     <Content Include="Content\SyntaxHighlighter\shCoreRDark.css" />
-    <Content Include="assets\CSS\shThemeDefault.css" />
+    <Content Include="Content\SyntaxHighlighter\shThemeDefault.css" />
     <Content Include="Content\SyntaxHighlighter\shThemeDjango.css" />
     <Content Include="Content\SyntaxHighlighter\shThemeEclipse.css" />
     <Content Include="Content\SyntaxHighlighter\shThemeEmacs.css" />
@@ -147,7 +147,7 @@
     <Content Include="Scripts\SyntaxHighlighter\shBrushGroovy.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushJava.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushJavaFX.js" />
-    <Content Include="assets\JS\shBrushJScript.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shBrushJScript.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushPerl.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushPhp.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushPlain.js" />
@@ -159,7 +159,7 @@
     <Content Include="Scripts\SyntaxHighlighter\shBrushSql.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushVb.js" />
     <Content Include="Scripts\SyntaxHighlighter\shBrushXml.js" />
-    <Content Include="assets\JS\shCore.js" />
+    <Content Include="Scripts\SyntaxHighlighter\shCore.js" />
     <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
     <Content Include="Web.config" />
   </ItemGroup>

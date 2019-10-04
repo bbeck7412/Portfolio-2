@@ -78,3 +78,11 @@ $("#ClearMath").click(function () {
     $("#math1,#math2,#math3,#math4,#math5").val("");
     $("#results1,#results2,#results3,#results4,#results5").text("");
 }) 
+
+//Show math code
+$("#ShowMath").click(function () { 
+    $("#Test").toggle();
+})
+
+
+//Palindrone Exercise

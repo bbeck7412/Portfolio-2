@@ -39,9 +39,9 @@
 
 
     <!-- Style-->
-    <link href="assets/CSS/shCoreDefault.css" rel="stylesheet" type="text/css" />
-    <link href="assets/CSS/shThemeDefault.css" rel="stylesheet" type="text/css" />
 
+    <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="Content/SyntaxHighlighter/shThemeMidnight.css" rel="stylesheet" />
     <!-- ========== Navigation ========== -->
 
     <nav class="navbar navbar-default navbar-fixed-top navbar-inverse navbar-trans  navbar-fw" role="navigation">
@@ -181,7 +181,7 @@
                 <div class="col-lg-4 col-md-6 mb-sm-50">
                     <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                         <span class="linea-ecommerce-diamond"></span>
-                        <h4> Java exercise 4 </h4>
+                        <h4> Palindrome exercise </h4>
                         <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing , sed do eiusmod tempor v</p>
                         <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3"> View</span> </button> </a>
 
@@ -768,6 +768,7 @@
                         </div>
 
 
+
                     </div>
 
                 </div>
@@ -778,11 +779,101 @@
                         <div class="col-lg-12 text-center">
                             <button id='GoMath' type="button" class="btn btn-info"> Go! </button>
                             <button id="ClearMath" type="button" class="btn btn-danger"> Reset </button>
-                            <button id="" type="button" class=" btn btn-warning"> Show code </button>
+                            <button id="ShowMath" type="button" class=" btn btn-warning"> Show code </button>
                             <button id="" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
                     </div>
 
+                </div>
+                <!-- Show code WIP-->
+                <div class="container">
+                    <div class="row">
+                        <div class=" col-lg-12 text-center">
+                            <div id="Test">
+                                <pre class="brush:js"> $('#GoMath').click(function () {
+    //Sum
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
+
+
+    var sum = Num1 + Num2 + Num3 + Num4 + Num5;
+
+
+    var output = ' The total sum of all the numbers ' + sum;
+    $('#results1').text(output);
+
+    //Product
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
+
+
+    var product = Num1 * Num2 * Num3 * Num4 * Num5;
+
+
+    var output = ' The total product of all the numbers ' + product;
+    $('#results2').text(output);
+
+    //Smallest Number
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
+
+
+    var smallest = Math.min(Num1, Num2, Num3, Num4, Num5);
+
+
+    var output = ' Your smallest number ' + smallest;
+    $('#results3').text(output);
+
+
+    //Biggest Number
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
+
+
+    var biggest = Math.max(Num1, Num2, Num3, Num4, Num5);
+
+
+    var output = ' Your biggest number ' + biggest;
+    $('#results4').text(output);
+
+    //Average Number
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
+
+
+    var average = sum / 5;
+
+    var output = ' The average of your number is ' + average;
+    $('#results5').text(output);
+})</pre>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -796,25 +887,31 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"> Java exercise 4 </h4>
+                    <h4 class="modal-title text-center"> Palindrome Exercise </h4>
                     <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="container">
-
+                    <div class="row">
+                        <div class=" col-md-6 text-center">
+                            <input type="text" class="form-control" placeholder="Enter your word." />
+                        </div>
+                        <div class="col-md-6 text-center h4"> Results </div>
+                    </div>
+                    <div class="row">
+                        <div id="PalRes" class="col-md-12"> PlaceHolder </div>
                     </div>
                 </div>
-
-                <!-- Modal footer -->
+                <!-- Modal footer-->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
-
             </div>
+
         </div>
     </div>
+
 
 
     <div class="modal" id="myModal4">
@@ -887,10 +984,10 @@
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/jquery.ajaxchimp.js"></script>
     <script src="assets/js/animDots.js"></script>
-    <script type="text/javascript" src="assets/JS/shCore.js"></script>
-    <script type="text/javascript" src="assets/JS/shBrushJScript.js"></script>
-    <script type="text/javascript">SyntaxHighlighter.all()</script>
     <script src="assets/JS/customJS.js"></script>
+    <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script> SyntaxHighlighter.all() </script>
 
 
 
