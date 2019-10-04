@@ -1,5 +1,5 @@
 ﻿
-// Jquery click event
+// Math wizzard calculations
 
 $('#GoMath').click(function () {
     //Sum
@@ -69,12 +69,12 @@ $('#GoMath').click(function () {
 
     var average = sum / 5;
 
-
     var output = ' The average of your number is ' + average;
     $('#results5').text(output);
-
-
-
-
 })
 
+//Clear Math wizzard button
+$("#ClearMath").click(function () {
+    $("#math1,#math2,#math3,#math4,#math5").val("");
+    $("#results1,#results2,#results3,#results4,#results5").text("");
+}) 
