@@ -1,9 +1,9 @@
 ﻿
-    // Jquery click event
+// Jquery click event
 
-    $('#GoMath').click(function () {
-            //Sum
-            var Num1 = Number($('#math1').val());
+$('#GoMath').click(function () {
+    //Sum
+    var Num1 = Number($('#math1').val());
     var Num2 = Number($('#math2').val());
     var Num3 = Number($('#math3').val());
     var Num4 = Number($('#math4').val());
@@ -67,15 +67,22 @@
     var Num5 = Number($('#math5').val());
 
 
-    var average = Num1 + Num2 + Num3 + Num4 + Num5 / 5;
+    var average = sum / 5;
 
 
     var output = ' The average of your number is ' + average;
     $('#results5').text(output);
 
+    $("ClearMath").click(function () {
+        $("math1", "math2", "math3", "math4", "math5").val('')
 
+        $('#results1').text('');
+        $('#results2').text('');
+        $('#results3').text('');
+        $('#results4').text('');
+        $('#results5').text('');
+    });
 
 
 })
-
 

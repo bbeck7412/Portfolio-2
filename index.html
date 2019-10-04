@@ -898,33 +898,15 @@
 
 
     <script>
-        $("#ClearMath").click(function () {
+        $("ClearMath").click(function () {
+            $("math1", "math2", "math3", "math4", "math5").val('')
 
-    var Num1 = Number($('#math1').val());
-    var Num2 = Number($('#math2').val());
-    var Num3 = Number($('#math3').val());
-    var Num4 = Number($('#math4').val());
-    var Num5 = Number($('#math5').val());
-
-            var clearmath = Num1 = Num2 = Num3 = Num4 = Num5 * 0;
-            var output = ' ' + clearmath;
-            $('#results1', 'results2', 'results3', 'results4', 'results5';).text(output);
-            
-        }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            $('#results1').text('');
+            $('#results2').text('');
+            $('#results3').text('');
+            $('#results4').text('');
+            $('#results5').text('');
+        });
 
 
     </script>
