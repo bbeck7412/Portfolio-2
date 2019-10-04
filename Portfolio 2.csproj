@@ -97,6 +97,7 @@
     <Content Include="assets\JS\bootstrap-hover-dropdown.min.js" />
     <Content Include="assets\JS\bootstrap.min.js" />
     <Content Include="assets\JS\countup.min.js" />
+    <Content Include="assets\JS\customJS.js" />
     <Content Include="assets\JS\google-fonts.js" />
     <Content Include="assets\JS\isotope.min.js" />
     <Content Include="assets\JS\jquery-2.1.4.min.js" />

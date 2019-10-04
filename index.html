@@ -174,7 +174,7 @@
                 <div class="col-lg-4 col-md-6 mb-sm-50">
                     <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
                         <span class="linea-basic-life-buoy"></span>
-                        <h4> Java exercise 3 </h4>
+                        <h4> JS Math wizzard </h4>
                         <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing , sed do eiusmod tempor </p>
                         <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"> View</span> </button> </a>
                     </div>
@@ -553,8 +553,8 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"> CSS Grid Exercise 1 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center h2"> CSS Grid Exercise 1 </h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -621,8 +621,8 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"> CSS Grid Exercise 2 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center h2"> CSS Grid Exercise 2 </h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -702,8 +702,8 @@
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title"> Java exercise 3 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title text-center h2"> Java exercise </h4>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -780,7 +780,7 @@
                     <div class="row">
                         <div class="col-lg-12 text-center">
                             <button id='GoMath' type="button" class="btn btn-info"> Go! </button>
-                            <button id="" type="button" class="btn btn-danger"> Reset </button>
+                            <button id="ClearMath" type="button" class="btn btn-danger"> Reset </button>
                             <button id="" type="button" class=" btn btn-warning"> Show code </button>
                             <button id="" type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                         </div>
@@ -800,7 +800,7 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title"> Java exercise 4 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -827,7 +827,7 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title"> Java exercise 5 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -852,7 +852,7 @@
                 <!-- Modal Header -->
                 <div class="modal-header">
                     <h4 class="modal-title"> Java exercise 6 </h4>
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <button type="button" class="close" data-dismiss="modal"></button>
                 </div>
 
                 <!-- Modal body -->
@@ -892,123 +892,42 @@
     <script src="assets/js/animDots.js"></script>
     <script type="text/javascript" src="assets/JS/shCore.js"></script>
     <script type="text/javascript" src="assets/JS/shBrushJScript.js"></script>
-    <script type="text/javascript"> SyntaxHighlighter.all()</script>
-   
-    
+    <script type="text/javascript">SyntaxHighlighter.all()</script>
+    <script src="assets/JS/customJS.js"></script>
+
+
+
     <script>
+        $("#ClearMath").click(function () {
 
-        // Jquery click event
+    var Num1 = Number($('#math1').val());
+    var Num2 = Number($('#math2').val());
+    var Num3 = Number($('#math3').val());
+    var Num4 = Number($('#math4').val());
+    var Num5 = Number($('#math5').val());
 
-        $('#GoMath').click(function () {
-            //Sum
-            var Num1 = Number($('#math1').val());
-            var Num2 = Number($('#math2').val());
-            var Num3 = Number($('#math3').val());
-            var Num4 = Number($('#math4').val());
-            var Num5 = Number($('#math5').val());
-
-
-            var sum = Num1 + Num2 + Num3 + Num4 + Num5;
-
-
-            var output = ' The total sum of all the numbers ' + sum;
-            $('#results1').text(output);
-
-            //Product 
-            var Num1 = Number($('#math1').val());
-            var Num2 = Number($('#math2').val());
-            var Num3 = Number($('#math3').val());
-            var Num4 = Number($('#math4').val());
-            var Num5 = Number($('#math5').val());
-
-
-            var product = Num1 * Num2 * Num3 * Num4 * Num5;
-
-
-            var output = ' The total product of all the numbers ' + product;
-            $('#results2').text(output);
-
-            //Smallest Number
-            var Num1 = Number($('#math1').val());
-            var Num2 = Number($('#math2').val());
-            var Num3 = Number($('#math3').val());
-            var Num4 = Number($('#math4').val());
-            var Num5 = Number($('#math5').val());
-
-
-            var smallest = Math.min(Num1, Num2, Num3, Num4, Num5);
-
-
-            var output = ' Your smallest number ' + smallest;
-            $('#results3').text(output);
-
-
-            //Biggest Number
-            var Num1 = Number($('#math1').val());
-            var Num2 = Number($('#math2').val());
-            var Num3 = Number($('#math3').val());
-            var Num4 = Number($('#math4').val());
-            var Num5 = Number($('#math5').val());
-
-
-            var smallest = Math.max(Num1, Num2, Num3, Num4, Num5);
-
-
-            var output = ' Your biggest number ' + smallest;
-            $('#results4').text(output);
-
-            //Average Number
-            var Num1 = Number($('#math1').val());
-            var Num2 = Number($('#math2').val());
-            var Num3 = Number($('#math3').val());
-            var Num4 = Number($('#math4').val());
-            var Num5 = Number($('#math5').val());
-
-
-            var smallest = Math.min(Num1, Num2, Num3, Num4, Num5);
-
-
-            var output = ' The smallest number ' + smallest;
-            $('#results3').text(output);
+            var clearmath = Num1 = Num2 = Num3 = Num4 = Num5 * 0;
+            var output = ' ' + clearmath;
+            $('#results1', 'results2', 'results3', 'results4', 'results5';).text(output);
+            
+        }
 
 
 
 
-        })
 
-       
+
+
+
+
+
+
+
+
+
+
 
     </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
