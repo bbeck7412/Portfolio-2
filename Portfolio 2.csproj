@@ -170,7 +170,7 @@
     <Content Include="assets\Fonts\fontawesome-webfont.woff" />
     <Content Include="assets\Fonts\fontawesome-webfont.woff2" />
     <None Include="packages.config" />
-    <None Include="Properties\PublishProfiles\BBeck - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\BBeck Free - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

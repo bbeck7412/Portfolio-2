@@ -73,15 +73,7 @@ $('#GoMath').click(function () {
     var output = ' The average of your number is ' + average;
     $('#results5').text(output);
 
-    $("ClearMath").click(function () {
-        $("math1", "math2", "math3", "math4", "math5").val('')
 
-        $('#results1').text('');
-        $('#results2').text('');
-        $('#results3').text('');
-        $('#results4').text('');
-        $('#results5').text('');
-    });
 
 
 })
