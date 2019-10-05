@@ -74,9 +74,10 @@
     <Content Include="assets\CSS\responsive.css" />
     <Content Include="assets\CSS\slick.css" />
     <Content Include="assets\Fonts\font-awesome.min.css" />
-    <Content Include="assets\Images\ag2-logo.png" />
+    <Content Include="assets\Images\B.logowhite.png" />
     <Content Include="assets\Images\Beck.png" />
     <Content Include="assets\Images\Blog.jpg" />
+    <Content Include="assets\Images\BSig.png" />
     <Content Include="assets\Images\BugInc.jpg" />
     <Content Include="assets\Images\favicon.png" />
     <Content Include="assets\Images\Finance.jpg" />
@@ -86,10 +87,8 @@
     <Content Include="assets\Images\Landing.jpg" />
     <Content Include="assets\Images\linkedin.png" />
     <Content Include="assets\Images\loader.svg" />
-    <Content Include="assets\Images\logo.png" />
     <Content Include="assets\Images\neb.jpg" />
     <Content Include="assets\Images\planet.jpg" />
-    <Content Include="assets\Images\signature.png" />
     <Content Include="assets\Images\surface.jpg" />
     <Content Include="assets\Images\TAC.jpg" />
     <Content Include="assets\Images\twitter.png" />
