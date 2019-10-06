@@ -87,24 +87,37 @@ $("#MathTog").toggle();
 })
 
 
+
+//Click/Launch 
+$("#PalCal").click(function () {
+
+    //Collecting user input
+
+    var userInput = $("#palInput").val();
+
+    //Process input
+
+    var message = palindrome(userInput);
+
+    //Output results
+    $("#PalRes").text(message);
+})
 //Palindrone Exercise
-function palCalc(word){
-    let value = "";
-    for (let loop = 0; loop < word.length; loop++) {
-        value += `The letter in posistion ${loop} is ${word.substr(loop, 1)} \n`;
-    }
-    return value;
-}
-
-
-
-
-
 function palindrome(word) {
-    var re = /[\W_]/g;
-    var lowRegStr = word.toLowerCase().replace(re, '');
-    var reverseStr = lowRegStr.split('').reverse().join('');
+    var message = /[\W_]/g;
+    var lowCaseStrip = word.toLowerCase().replace(message, "");
+    var lowRevJoin = lowCaseStrip.split("").reverse().join(""); 
 
-    if (lowRegStr === reverseStr) { $("#PalRes").text("Looks like " + word + "is a palindrome!") }
-    else { $("#PalRes").text( "Looks like the word you entered is not a palindrome.") }
+    if (lowCaseStrip === lowRevJoin) { $("#PalRes").text("Looks like  " + word + " is a palindrome! ") }
+    else { $("#PalRes").text("Looks like the sequence entered is not a palindrome. ") }
+        
 }
+//Palindrome clear
+$("#clearPal").click(function () {
+    $("#palInput").val('');
+    $("#PalRes").text('');
+})
+$("#PalTog").hide();
+$("#PalShow").click(function () {
+    $("#PalTog").toggle();
+})
