@@ -861,16 +861,16 @@
     var output = ' The average of your number is ' + average;
     $('#results5').text(output);
 })</pre>
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
-                            
+
+
+
+
+
+
+
+
+
+
                             </div>
                         </div>
                     </div>
@@ -882,7 +882,7 @@
 
 
     <div class="modal" id="myModal3">
-        <div class="modal-dialog">
+        <div class=".modal-dialog">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -894,18 +894,21 @@
                 <!-- Modal body -->
                 <div class="modal-body">
                     <div class="row">
-                        <div class="col-md-12 text-center h3"> Palindrome Checker.</div>
+                        <div class="col-md-12 text-center h4"> A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward. This exercise checks whether or not the input word is a palindrome.</div>
                         <div class=" col-md-6 text-center">
-                            <input type="text" class="form-control" placeholder="Enter your word." />
+                            <input id="palInput" type="text" class="form-control" placeholder="Enter your word." />
                         </div>
                         <div class="col-md-6 text-center h4"> Results Below </div>
                     </div>
                     <div class="row">
-                        <div id="PalRes" class="col-md-12"> PlaceHolder </div>
+                        <p id="PalRes"></p>
                     </div>
                 </div>
                 <!-- Modal footer-->
                 <div class="modal-footer">
+                    <button type="button" id="PalCal" class="btn btn-primary">Go!</button>
+                    <button type="button" class="btn btn-warning">Clear</button>
+                    <button type="button" class="btn btn-info">Show Code</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
             </div>
@@ -930,15 +933,15 @@
                     <div class="col"
                 </div>
 
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
 
+                </div>
             </div>
         </div>
     </div>
-
 
     <div class="modal" id="myModal5">
         <div class="modal-dialog">
@@ -988,8 +991,34 @@
     <script src="assets/JS/customJS.js"></script>
     <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
-    <script> SyntaxHighlighter.all() </script>
+    <script>SyntaxHighlighter.all()</script>
+    <script>
+        //Button click
+        $("#PalCal").click(function () {
 
+            //Collecting user input
+
+            var userInput = $("#palInput").val();
+
+            //Process input
+
+            var message = palindrome(userInput);
+
+            //Output results
+
+            $("#PalRes").text(message);
+
+        })
+
+        // User input
+
+        //Data
+
+        // Results
+
+        //
+
+    </script>
 
 
     <!-- Definity JS -->

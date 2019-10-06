@@ -88,3 +88,23 @@ $("#MathTog").toggle();
 
 
 //Palindrone Exercise
+function palCalc(word){
+    let value = "";
+    for (let loop = 0; loop < word.length; loop++) {
+        value += `The letter in posistion ${loop} is ${word.substr(loop, 1)} \n`;
+    }
+    return value;
+}
+
+
+
+
+
+function palindrome(word) {
+    var re = /[\W_]/g;
+    var lowRegStr = word.toLowerCase().replace(re, '');
+    var reverseStr = lowRegStr.split('').reverse().join('');
+
+    if (lowRegStr === reverseStr) { $("#PalRes").text("Looks like " + word + "is a palindrome!") }
+    else { $("#PalRes").text( "Looks like the word you entered is not a palindrome.") }
+}
