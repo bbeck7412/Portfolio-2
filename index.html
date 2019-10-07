@@ -182,7 +182,7 @@
                     <div class="ft-item wow fadeInUp" data-wow-duration="1s">
                         <span class="linea-ecommerce-diamond"></span>
                         <h4> Palindrome exercise </h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur elit adipisicing , sed do eiusmod tempor v</p>
+                        <p> Using JScript to check whether or not a word is a palindrome. </p>
                         <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3"> View</span> </button> </a>
 
                     </div>
@@ -896,7 +896,7 @@
                     <div class="row">
                         <div class="col-md-12 text-center h4"> A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward. This exercise checks whether or not the input word is a palindrome.</div>
                         <div class=" col-md-6 text-center">
-                            <input id="palInput" type="text" class="form-control" placeholder="Enter your first number." />
+                            <input id="palInput" type="text" class="form-control" placeholder=" Enter your word here " />
                         </div>
                     </div>
                     <div class="row">
@@ -910,12 +910,11 @@
                     <button type="button" id="PalShow" class="btn btn-info">Show Code</button>
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <div id="PalTog">
-                            <pre class="brush:js"> $('#PalShow').click(function () { function palindrome(word) {
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-9 text-center">
+                            <div id="PalTog">
+                                <pre class="brush:js"> $('#PalShow').click(function () { function palindrome(word) {
     var message = /[\W_]/g;
     var lowCaseStrip = word.toLowerCase().replace(message, "");
     var lowRevJoin = lowCaseStrip.split("").reverse().join(""); 
@@ -925,12 +924,14 @@
         
 }
 </pre>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
     </div>
 
 
@@ -952,12 +953,12 @@
                             <div> Fizbuzz prints numbers 1-100 but for multiples of 3 it prints fizz and 5's it prints buzz while multiples of 3 and 5 together prints fizbuzz. </div>
                         </div>
                         <div class="col-md-6 text-center">
-                            <input id="FizNum1" type="number" class="form-control" placeholder="Enter your number" />
+                            <input id="FizNum1" type="number" class="form-control" placeholder="Enter your first number" />
                         </div>
                         <div class="col-md-6 text-center">
                             <input id="FizNum2" type="number" class="form-control" placeholder="Enter your second number" />
                         </div>
-                        <div> <textarea id="fbRes"> </textarea></div>
+                        <div> <textarea id="fbRes" class="form-control" style="min-width: 100%"> </textarea></div>
 
                     </div>
 
