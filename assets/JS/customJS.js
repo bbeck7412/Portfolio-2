@@ -132,10 +132,10 @@ $("#fbGo").click(function () {
     var result = "";
 
     for (i = 1; i <= 100; i++) {
-        if (i % num1 == 0 && i % num2 == 0) { result += 'FizzBuzz '; }
-        else if (i % num1 == 0) { result += 'Fizz '; }
-        else if (i % num2 == 0) { result += 'Buzz '; }
-        else { result += i; }
+        if (i % num1 == 0 && i % num2 == 0) { result += ' FizzBuzz '; }
+        else if (i % num1 == 0) { result += ' Fizz '; }
+        else if (i % num2 == 0) { result += ' Buzz '; }
+        else { result += i+'  '; }
     }
 
     $('#fbRes').text(result);
