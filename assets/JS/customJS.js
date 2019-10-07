@@ -83,7 +83,7 @@ $("#ClearMath").click(function () {
 
 //Show math code
 $("#ShowMath").click(function () {
-$("#MathTog").toggle();
+    $("#MathTog").toggle();
 })
 
 
@@ -104,13 +104,13 @@ $("#PalCal").click(function () {
 })
 //Palindrone Exercise
 function palindrome(word) {
-    var message = /[\W_]/g;
-    var lowCaseStrip = word.toLowerCase().replace(message, "");
-    var lowRevJoin = lowCaseStrip.split("").reverse().join(""); 
+    var message = /[\W_]/g; //Strips all unwanted characters from input.
+    var lowCaseStrip = word.toLowerCase().replace(message, ""); //Changes the input word to lowercase and replaces the variable message with the lowercase version of the input.
+    var lowRevJoin = lowCaseStrip.split("").reverse().join(""); //Takes the string value of lowCaseStrip and splits the string into an array afterwards reversing that string  and mashing them back together.
 
-    if (lowCaseStrip === lowRevJoin) { $("#PalRes").text("Looks like  " + word + " is a palindrome! ") }
-    else { $("#PalRes").text("Looks like the sequence entered is not a palindrome. ") }
-        
+    if (lowCaseStrip === lowRevJoin) { $("#PalRes").text("Looks like  " + word + " is a palindrome! ") } // If both strings are equal in value and type the results of word are ouput to the results box.
+    else { $("#PalRes").text("Looks like the sequence entered is not a palindrome. ") } //If they are not equal there is a generic ouput.
+
 }
 //Palindrome clear
 $("#clearPal").click(function () {
@@ -135,7 +135,7 @@ $("#fbGo").click(function () {
         if (i % num1 == 0 && i % num2 == 0) { result += ' FizzBuzz '; }
         else if (i % num1 == 0) { result += ' Fizz '; }
         else if (i % num2 == 0) { result += ' Buzz '; }
-        else { result += i+'  '; }
+        else { result += i + '  '; }
     }
 
     $('#fbRes').text(result);
@@ -148,3 +148,11 @@ $("#fbTog").hide();
 $("#fbShow").click(function () {
     $("#fbTog").toggle();
 })
+
+//Factorial
+
+$("#facGo").click(function () {
+    var Num1 = Number($('#facNum').val()); //User input value is received
+
+    $('#facRes').text(result);
+});
