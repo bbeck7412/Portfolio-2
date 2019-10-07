@@ -151,11 +151,13 @@ $("#fbShow").click(function () {
 
 //Factorial
 
-$("#facGo").click(function () {
+$("#facGo").click(function Factorial () {
     var Num1 = Number($('#facNum').val()); //User input value is received
-    if (Num1 == 0 && Num1 <= 1) {
+    if (Num1 > 0 && Num1 <= 1) {
         return 1;
     }
-    else 
-    $('#facRes').text(result);
+    else {
+        return Num1 * Factorial(Num1 - 1);
+    }
+    $("#facRes").text(results);
 });
