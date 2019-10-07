@@ -153,6 +153,9 @@ $("#fbShow").click(function () {
 
 $("#facGo").click(function () {
     var Num1 = Number($('#facNum').val()); //User input value is received
-
+    if (Num1 == 0 && Num1 <= 1) {
+        return 1;
+    }
+    else 
     $('#facRes').text(result);
 });
