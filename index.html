@@ -896,9 +896,8 @@
                     <div class="row">
                         <div class="col-md-12 text-center h4"> A palindrome is a word, number, phrase, or other sequence of characters which reads the same backward as forward. This exercise checks whether or not the input word is a palindrome.</div>
                         <div class=" col-md-6 text-center">
-                            <input id="palInput" type="text" class="form-control" placeholder="Enter your word." />
+                            <input id="palInput" type="text" class="form-control" placeholder="Enter your first number." />
                         </div>
-                        <div class="col-md-6 text-center h4"> Results Below </div>
                     </div>
                     <div class="row">
                         <p id="PalRes"></p>
@@ -925,7 +924,7 @@
     else { $("#PalRes").text("Looks like the word you entered is not a palindrome.") }
         
 }
-
+</pre>
                         </div>
                     </div>
                 </div>
@@ -937,7 +936,7 @@
 
 
     <div class="modal" id="myModal4">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -948,14 +947,53 @@
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <div class="col"
-                </div>
+                    <div class="row">
+                        <div class="col-md-12 text-center h4">
+                            <div> Fizbuzz prints numbers 1-100 but for multiples of 3 it prints fizz and 5's it prints buzz while multiples of 3 and 5 together prints fizbuzz. </div>
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <input id="FizNum1" type="number" class="form-control" placeholder="Enter your number" />
+                        </div>
+                        <div class="col-md-6 text-center">
+                            <input id="FizNum2" type="number" class="form-control" placeholder="Enter your second number" />
+                        </div>
+                        <div> <textarea id="fbRes"> </textarea></div>
+
+                    </div>
 
                     <!-- Modal footer -->
                     <div class="modal-footer">
+                        <button id="fbGo" type="button" class="btn btn-info"> Go </button>
+                        <button id="fbClr" type="button" class="btn btn-warning"> Reset </button>
+                        <button id="fbShow" type="button" class="btn btn-primary"> Show code </button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                    </div>
 
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-8 text-center">
+                                <div id="fbTog">
+                                    <pre class="brush:js">
+$("#fbGo").click(function () {
+    var num1 = Number($('#FizNum1').val());
+    var num2 = Number($('#FizNum2').val());
+    var i;
+    var result = "";
+
+    for (i = 1; i <= 100; i++) {
+        if (i % num1 == 0 && i % num2 == 0) { result += 'FizzBuzz '; }
+        else if (i % num1 == 0) { result += 'Fizz '; }
+        else if (i % num2 == 0) { result += 'Buzz '; }
+        else { result += i; }
+    }
+
+    $('#fbRes').text(result);
+</pre>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1010,8 +1048,10 @@
     <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
     <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
     <script>SyntaxHighlighter.all()</script>
-
     <!-- Definity JS -->
     <script src="assets/js/main.js"></script>
+
+
+
 </body>
 </html>

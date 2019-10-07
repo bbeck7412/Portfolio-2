@@ -121,3 +121,30 @@ $("#PalTog").hide();
 $("#PalShow").click(function () {
     $("#PalTog").toggle();
 })
+
+
+
+//FizBuzz Launch
+$("#fbGo").click(function () {
+    var num1 = Number($('#FizNum1').val());
+    var num2 = Number($('#FizNum2').val());
+    var i;
+    var result = "";
+
+    for (i = 1; i <= 100; i++) {
+        if (i % num1 == 0 && i % num2 == 0) { result += 'FizzBuzz '; }
+        else if (i % num1 == 0) { result += 'Fizz '; }
+        else if (i % num2 == 0) { result += 'Buzz '; }
+        else { result += i; }
+    }
+
+    $('#fbRes').text(result);
+});
+$("#fbClr").click(function () {
+    $("#FizNum1,#FizNum2").val('');
+    $("#fbRes").text('');
+})
+$("#fbTog").hide();
+$("#fbShow").click(function () {
+    $("#fbTog").toggle();
+})
