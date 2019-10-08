@@ -73,7 +73,8 @@
     <Content Include="assets\CSS\main.css" />
     <Content Include="assets\CSS\responsive.css" />
     <Content Include="assets\CSS\slick.css" />
-    <Content Include="assets\CSS\font-awesome.min.css" />
+    <Content Include="assets\fonts\fontawesome\css\font-awesome.min.css" />
+    <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.svg" />
     <Content Include="assets\Images\B.logowhite.png" />
     <Content Include="assets\Images\Beck.png" />
     <Content Include="assets\Images\Blog.jpg" />
@@ -119,8 +120,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\CSS\fontawesome-webfont.woff" />
-    <Content Include="assets\CSS\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="assets\fonts\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\fonts\fontawesome\fonts\FontAwesome.otf" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\BBeck Free - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
