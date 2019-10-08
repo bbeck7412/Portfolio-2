@@ -73,7 +73,7 @@
     <Content Include="assets\CSS\main.css" />
     <Content Include="assets\CSS\responsive.css" />
     <Content Include="assets\CSS\slick.css" />
-    <Content Include="assets\Fonts\font-awesome.min.css" />
+    <Content Include="assets\CSS\font-awesome.min.css" />
     <Content Include="assets\Images\B.logowhite.png" />
     <Content Include="assets\Images\Beck.png" />
     <Content Include="assets\Images\Blog.jpg" />
@@ -119,8 +119,8 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="assets\Fonts\fontawesome-webfont.woff" />
-    <Content Include="assets\Fonts\fontawesome-webfont.woff2" />
+    <Content Include="assets\CSS\fontawesome-webfont.woff" />
+    <Content Include="assets\CSS\fontawesome-webfont.woff2" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\BBeck Free - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
@@ -130,7 +130,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="assets\Fonts\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
