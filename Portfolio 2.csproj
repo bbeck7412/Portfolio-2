@@ -81,17 +81,11 @@
     <Content Include="assets\Images\BugInc.jpg" />
     <Content Include="assets\Images\favicon.png" />
     <Content Include="assets\Images\Finance.jpg" />
-    <Content Include="assets\Images\github.png" />
     <Content Include="assets\Images\H2.jpg" />
     <Content Include="assets\Images\H2Front.jpg" />
     <Content Include="assets\Images\Landing.jpg" />
-    <Content Include="assets\Images\linkedin.png" />
     <Content Include="assets\Images\loader.svg" />
-    <Content Include="assets\Images\neb.jpg" />
-    <Content Include="assets\Images\planet.jpg" />
-    <Content Include="assets\Images\surface.jpg" />
     <Content Include="assets\Images\TAC.jpg" />
-    <Content Include="assets\Images\twitter.png" />
     <Content Include="assets\JS\animDots.js" />
     <Content Include="assets\JS\bootstrap-hover-dropdown.min.js" />
     <Content Include="assets\JS\bootstrap.min.js" />
