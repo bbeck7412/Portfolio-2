@@ -153,11 +153,14 @@ $("#fbShow").click(function () {
 
 $("#facGo").click(function Factorial () {
     var Num1 = Number($('#facNum').val()); //User input value is received
-    if (Num1 > 0 && Num1 <= 1) {
-        return 1;
+    var i;
+    var results = '';
+
+    for (i = 0; i >= 1; i++) {
+
     }
-    else {
-        return Num1 * Factorial(Num1 - 1);
-    }
+
+
+
     $("#facRes").text(results);
 });
