@@ -155,10 +155,11 @@ $("#facGo").click(function Factorial () {
 
 //User input value is received
     var Num1 = $('#facNum').val(); 
-//Input value is stored in a new variable 
-var calculate = Factorialize(Num1);
-//Output results 
-$("#facRes").number(Factorialize);
+
+
+
+ // Output results 
+ $("#facRes").number(Factorialize);
 
 
 
