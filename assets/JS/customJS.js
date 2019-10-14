@@ -157,11 +157,11 @@ $("#facGo").click(function () {
     var fac1 = Number($('#facNum').val());
     //Variable for output value
     var result = fac1;
-
+    // If user inputs values 0 or 1 return the value of 1 to the input box
     if (fac1 === 0 || fac1 === 1) {
         $("#facRes").text('1');
     } else {
-
+        //Else the user adds a number above 1 run the while loop and take the input number and decrement it by 1 as long as the value is greater than zero. 
         while (fac1 > 1) {
             fac1--;
             result = result * fac1;
@@ -170,9 +170,12 @@ $("#facGo").click(function () {
         $("#facRes").text(result);
     }
 
-
-
-
-
-
 });
+$("#facClr").click(function () {
+    $("#facNum").val('');
+    $("#facRes").text('');
+})
+$("#facTog").hide()
+$("#facShow").click(function () {
+    $("#facTog").toggle();
+})
