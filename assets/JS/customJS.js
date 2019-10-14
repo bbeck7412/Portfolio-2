@@ -1,4 +1,4 @@
-﻿
+﻿// Need to shrink down
 // Math wizzard calculations
 
 $('#GoMath').click(function () {
@@ -87,7 +87,7 @@ $("#ShowMath").click(function () {
 })
 
 
-
+//Rebuild 
 //Click/Launch 
 $("#PalCal").click(function () {
 
@@ -123,7 +123,7 @@ $("#PalShow").click(function () {
 })
 
 
-
+//Rebuild
 //FizBuzz Launch
 $("#fbGo").click(function () {
     var num1 = Number($('#FizNum1').val());
@@ -151,15 +151,25 @@ $("#fbShow").click(function () {
 
 //Factorial
 
-$("#facGo").click(function Factorial () {
+$("#facGo").click(function () {
 
-//User input value is received
-    var Num1 = $('#facNum').val(); 
+    //User input value is received
+    var fac1 = Number($('#facNum').val());
+    //Variable for output value
+    var result = fac1;
 
+    if (fac1 === 0 || fac1 === 1) {
+        $("#facRes").text('1');
+    } else {
 
+        while (fac1 > 1) {
+            fac1--;
+            result = result * fac1;
+        }
+        // Output results 
+        $("#facRes").text(result);
+    }
 
- // Output results 
- $("#facRes").number(Factorialize);
 
 
 
