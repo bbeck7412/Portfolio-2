@@ -65,13 +65,14 @@
             <ul class="nav navbar-nav">
                 <li><a href="#home">Home<span class="sr-only"></span></a></li>
                 <li><a href="#about"> About Me <span class="sr-only"></span></a></li>
-                <li><a href="#services">Coding Challenges<span class="sr-only"></span></a></li>
                 <li><a href="#portfolio">Portfolio<span class="sr-only"></span></a></li>
+                <li><a href="#services">Coding Challenges<span class="sr-only"></span></a></li>
                 <li><a href="#contact">Contact<span class="sr-only"></span></a></li>
 
             </ul><!-- / .nav .navbar-nav -->
         </div><!--/.navbar-collapse -->
     </nav><!-- / .navbar -->
+
     <!-- ========== Hero Cover ========== -->
 
     <div id="home" class="agency2-hero">
@@ -85,8 +86,8 @@
                     <div class="hero-content">
 
                         <img src="assets/Images/B.logowhite.png" alt="Creative Agency Template">
-                        <h1 class="hero-lead"> Software Developer </h1>
-                        <h4 class="h-alt hero-secondary">Web Design &amp; Development</h4>
+                        <h1 class="hero-lead"> .Net Developer </h1>
+                        <h1 class="h-alt hero-secondary"> Web Application Development </h1>
                         <a href="#about" class="btn btn-light">Learn More</a>
 
                         <!-- Scroller -->
@@ -101,7 +102,9 @@
 
         </div><!-- / .bg-overlay -->
     </div><!-- / #home -->
+
     <!-- ========== About - Section ========== -->
+
     <div class="gray-bg">
         <section id="about" class="container freelancer-about">
             <div class="row section">
@@ -141,86 +144,10 @@
             </div>
         </section>
     </div>
-    <!-- ========== Coding challenges ========== -->
 
-    <div class="gray-bg">
-        <section id="services" class="container ft-cards">
-            <div class="row section">
-
-                <header class="sec-heading">
-                    <h2> Coding Challenges </h2>
-                    <span class="subheading"> Completed Excercises </span>
-                </header>
-
-                <!-- Item 1 -->
-                <div class="col-lg-4 col-md-6 mb-sm-50">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                        <span class="linea-ecommerce-diamond"></span>
-                        <h4> CSS Grid exercise 1 </h4>
-                        <p> Small exercise showing the use of CSS grid inside a modal. </p>
-                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> View</span> </button> </a>
-
-                    </div>
-                </div>
-
-                <!-- Item 2 -->
-                <div class="col-lg-4 col-md-6 mb-sm-50">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
-                        <h4> CSS Grid exercise 2 </h4>
-                        <p> Another example of CSS grid being used inside a modal.  </p>
-                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1"> View</span> </button> </a>
-                    </div>
-                </div>
-
-                <!-- Item 3 -->
-                <div class="col-lg-4 col-md-6 mb-sm-30">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
-                        <h4> JS Math wizzard </h4>
-                        <p> JS producing the sum, product, average, biggest, and smallest numbers </p>
-                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"> View</span> </button> </a>
-                    </div>
-                </div>
-
-                <!-- Item 4 -->
-                <div class="col-lg-4 col-md-6 mb-sm-50">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                        <span class="linea-ecommerce-diamond"></span>
-                        <h4> Palindrome exercise </h4>
-                        <p> Using JScript to check whether or not a word is a palindrome. </p>
-                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3"> View</span> </button> </a>
-
-                    </div>
-                </div>
-
-
-                <!-- Item 5 -->
-                <div class="col-lg-4 col-md-6 mb-sm-50 text-center">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                        <span class="linea-ecommerce-diamond"></span>
-                        <h4> FizBuzz  </h4>
-                        <p> The classic FizzBuzz algorithm solved using JavaScript.  </p>
-                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4"> View</span> </button> </a>
-
-                    </div>
-                </div>
-
-                <!-- Item 5 -->
-                <div class="col-lg-4 col-md-6 mb-sm-50 text-center">
-                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
-                        <span class="linea-ecommerce-diamond"></span>
-                        <h4> Factorials  </h4>
-                        <p> Using JavaScript to produce the product of a factorial </p>
-                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5"> View</span> </button> </a>
-
-                    </div>
-                </div>
-
-
-            </div><!-- / .row -->
-        </section>
-    </div><!-- / .gray-bg -->
     <!-- ========== Portfolio Full Width - 4 Columns ========== -->
 
+    <div id="portfolio"></div>
     <section class="container-fluid portfolio-layout portfolio-columns-fw">
         <div class="row">
             <header class="sec-heading">
@@ -229,9 +156,8 @@
             </header>
         </div><!-- / .row -->
 
-
         <div class="row">
-            <div id="portfolio">
+            <div>
 
                 <!-- Item 1 -->
                 <div class="col-md-4 portfolio-item print">
@@ -315,6 +241,86 @@
             </div><!-- / #pfolio -->
         </div><!-- / .row -->
     </section><!-- / .portfolio-columns-fw -->
+
+    <!-- ========== Coding challenges ========== -->
+
+    <div class="gray-bg">
+        <section id="services" class="container ft-cards">
+            <div class="row section">
+
+                <header class="sec-heading">
+                    <h2> Coding Challenges </h2>
+                    <span class="subheading"> Completed Excercises </span>
+                </header>
+
+                <!-- Item 1 -->
+                <div class="col-lg-4 col-md-6 mb-sm-50">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                        <span class="linea-ecommerce-diamond"></span>
+                        <h4> CSS Grid exercise 1 </h4>
+                        <p> Small exercise showing the use of CSS grid inside a modal. </p>
+                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"> View</span> </button> </a>
+
+                    </div>
+                </div>
+
+                <!-- Item 2 -->
+                <div class="col-lg-4 col-md-6 mb-sm-50">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">
+                        <h4> CSS Grid exercise 2 </h4>
+                        <p> Another example of CSS grid being used inside a modal.  </p>
+                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal1"> View</span> </button> </a>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="col-lg-4 col-md-6 mb-sm-30">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s" data-wow-delay=".6s">
+                        <h4> JS Math wizzard </h4>
+                        <p> JS producing the sum, product, average, biggest, and smallest numbers </p>
+                        <a <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2"> View</span> </button> </a>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="col-lg-4 col-md-6 mb-sm-50">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                        <span class="linea-ecommerce-diamond"></span>
+                        <h4> Palindrome exercise </h4>
+                        <p> Using JScript to check whether or not a word is a palindrome. </p>
+                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3"> View</span> </button> </a>
+
+                    </div>
+                </div>
+
+
+                <!-- Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-sm-50 text-center">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                        <span class="linea-ecommerce-diamond"></span>
+                        <h4> FizBuzz  </h4>
+                        <p> The classic FizzBuzz algorithm solved using JavaScript.  </p>
+                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal4"> View</span> </button> </a>
+
+                    </div>
+                </div>
+
+                <!-- Item 5 -->
+                <div class="col-lg-4 col-md-6 mb-sm-50 text-center">
+                    <div class="ft-item wow fadeInUp" data-wow-duration="1s">
+                        <span class="linea-ecommerce-diamond"></span>
+                        <h4> Factorials  </h4>
+                        <p> Using JavaScript to produce the product of a factorial </p>
+                        <a  <span class="linea-arrows-slim-right"> <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal5"> View</span> </button> </a>
+
+                    </div>
+                </div>
+
+
+            </div><!-- / .row -->
+        </section>
+    </div><!-- / .gray-bg -->
+
     <!-- ========== Footer Contact ========== -->
 
     <footer id="contact" class="footer-contact">
@@ -428,8 +434,8 @@
             </div><!-- / .container -->
         </div><!-- / .copyright -->
     </footer><!-- / .footer-contact -->
-    <!--Modal place holder-->
-    <!-- Button to Open the Modal -->
+
+    <!--Modal Body-->
 
     <div class="modal" id="myModal">
         <div class=".modal-dialog">
