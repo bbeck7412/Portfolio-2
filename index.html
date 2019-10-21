@@ -804,13 +804,40 @@
                     <div class="row">
                         <div class="col-lg-9 text-center">
                             <div id="PalTog">
-                                <pre class="brush:js"> $('#PalShow').click(function () { function palindrome(word) {
-    var message = /[\W_]/g;
-    var lowCaseStrip = word.toLowerCase().replace(message, "");
-    var lowRevJoin = lowCaseStrip.split("").reverse().join(""); 
+                                <pre class="brush:js"> 
+//Click/Launch 
+$("#PalCal").click(function () {
 
-    if (lowCaseStrip === lowRevJoin) { $("#PalRes").text("Looks like the " + word + " is a palindrome! ") }
-    else { $("#PalRes").text("Looks like the word you entered is not a palindrome.") }
+    //Collecting user input
+
+    var userInput = $("#palInput").val();
+
+    //Process input
+
+    var message = palindrome(userInput);
+
+    //Output results
+    $("#PalRes").text(message);
+})
+//Palindrome Exercise
+function palindrome(word) {
+    var message = /[\W_]/g; //Strips all unwanted characters from input.
+    var lowCaseStrip = word.toLowerCase().replace(message, ""); //Changes the input word to lowercase and replaces the variable message with the lowercase version of the input.
+    var lowRevJoin = lowCaseStrip.split("").reverse().join(""); //Takes the string value of lowCaseStrip and splits the string into an array afterwards reversing that string  and mashing them back together.
+
+    if (lowCaseStrip === lowRevJoin) { $("#PalRes").text("Looks like  " + word + " is a palindrome! ") } // If both strings are equal in value and type the results of word are ouput to the results box.
+    else { $("#PalRes").text("Looks like the sequence entered is not a palindrome. ") } //If they are not equal there is a generic ouput.
+
+}
+//Palindrome clear
+$("#clearPal").click(function () {
+    $("#palInput").val('');
+    $("#PalRes").text('');
+})
+$("#PalTog").hide();
+$("#PalShow").click(function () {
+    $("#PalTog").toggle();
+})
         
 }
 </pre>

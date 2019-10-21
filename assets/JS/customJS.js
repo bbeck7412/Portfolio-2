@@ -102,7 +102,7 @@ $("#PalCal").click(function () {
     //Output results
     $("#PalRes").text(message);
 })
-//Palindrone Exercise
+//Palindrome Exercise
 function palindrome(word) {
     var message = /[\W_]/g; //Strips all unwanted characters from input.
     var lowCaseStrip = word.toLowerCase().replace(message, ""); //Changes the input word to lowercase and replaces the variable message with the lowercase version of the input.
