@@ -78,9 +78,10 @@
     <Content Include="assets\Images\B.logowhite.png" />
     <Content Include="assets\Images\Beck.png" />
     <Content Include="assets\Images\Blog.jpg" />
+    <Content Include="assets\Images\Brandon Beck full size.jpg" />
     <Content Include="assets\Images\Brandon Beck.jpg" />
     <Content Include="assets\Images\BSig.png" />
-    <Content Include="assets\Images\BugInc.jpg" />
+    <Content Include="assets\Images\Bug tracker preview.png" />
     <Content Include="assets\Images\favicon.png" />
     <Content Include="assets\Images\Finance.jpg" />
     <Content Include="assets\Images\H2.jpg" />
@@ -109,7 +110,6 @@
     <Content Include="assets\JS\modernizr-2.8.3.min.js" />
     <Content Include="assets\JS\slick.min.js" />
     <Content Include="assets\JS\wow.min.js" />
-    <Content Include="assets\PHP\contact-form.php" />
     <Content Include="assets\CSS\shCore.css" />
     <Content Include="assets\CSS\shThemeMidnight.css" />
     <Content Include="index.html" />
