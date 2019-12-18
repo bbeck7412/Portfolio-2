@@ -161,7 +161,7 @@
 
                 <div class="col-lg-4 freelancer-about-content">
                     <h2 class="t1-heading">About me</h2>
-                    <p class="h3"> Hi there! My name is Brandon Beck, and I am aspiring developer currently studying the .Net stack! </p>
+                    <p class="h3"> Hi there! My name is Brandon Beck, and I am  an aspiring developer currently studying the .Net stack! </p>
                     <p class="h3">
                         <div>
                             <img class="fa-css3" /> <img class="fa-html5" />
@@ -199,7 +199,7 @@
                                 <h6 class="subheading"> A web application to track bug and feature requests built using MVC, C# and SQL database.</h6>
                             </div>
                         </div>
-                        <a href="https://bbeckbugzapper.azurewebsites.net" class="open-btn"><i class="fa fa-expand"></i></a>
+                        <a href="https://bbeckbugzapper.azurewebsites.net" target="_blank" class="open-btn"><i class="fa fa-expand"></i></a>
                     </div>
                 </div><!-- / .portfolio-item -->
                 <!-- Item 2 -->
@@ -212,7 +212,7 @@
                                 <h6 class="subheading"> A web application built using MVC, C#, and a SQL database. A simple blog project built to create a foundational knowledge of a code-first project.</h6>
                             </div>
                         </div>
-                        <a href="https://bbeckblog.azurewebsites.net" class="open-btn"><i class="fa fa-expand"></i></a>
+                        <a href="https://bbeckblog.azurewebsites.net" target="_blank" class="open-btn"><i class="fa fa-expand"></i></a>
                     </div>
                 </div><!-- / .portfolio-item -->
                 <!-- Item 3 -->
@@ -363,41 +363,43 @@
                     <div id="map-canvas" class="footer-map"></div>
 
                     <address class="contact-info-wrapper">
-
-
-
                         <ul>
-
-
-
-
+                            <!-- Address -->
+                            <li class="contact-group">
+                                <span class="adr-heading">Address</span>
+                                <span class="adr-info">100 Street, Il, US</span>
+                            </li>
                             <!-- Email -->
                             <li class="contact-group">
                                 <span class="adr-heading">Email</span>
-                                <span class="adr-info"> Bbeck7412@gmail.com </span>
+                                <span class="adr-info">sayhello@email.com</span>
                             </li>
                         </ul>
                         <ul>
-
+                            <!-- Phone -->
+                            <li class="contact-group">
+                                <span class="adr-heading">Phone</span>
+                                <span class="adr-info">+ 123 4567 890</span>
+                            </li>
                             <!-- Mobile -->
                             <li class="contact-group">
                                 <span class="adr-heading">Mobile</span>
-                                <span class="adr-info"> 9-999-9999 </span>
+                                <span class="adr-info">+ 123 4567 890</span>
                             </li>
                         </ul>
 
-
+                        <a href="#" class="show-map"><span class="linea-basic-geolocalize-05"></span>show on map</a>
+                    </address>
 
                 </div><!-- / .col-lg-6 -->
                 <!-- Contact Form -->
                 <div class="col-lg-6 no-gap section contact-form">
-                    <div>
-                        <div class="row">
-                            <div class="col-lg-pull-4 h1 bold"> Contact Me </div>
-                        </div>
-                    </div>
+                    <header class="sec-heading">
+                        <h2>Contact Me</h2>
+                        
+                    </header>
 
-                    <form action="assets/contact-form/contact-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
+                    <form action="/assets/PHP/contact-form.php" method="POST" class="form-ajax wow fadeInUp" data-wow-duration="1s" data-wow-delay=".1s">
 
                         <!-- Name -->
                         <div class="form-group">
@@ -1024,12 +1026,12 @@ $("#fbGo").click(function () {
     <script src="assets/js/countup.min.js"></script>
     <script src="assets/js/isotope.min.js"></script>
     <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.ajaxchimp.js"></script>
     <script src="assets/JS/customJS.js"></script>
     <script src="assets/JS/shCore.js"></script>
-    <script src="assets/JS/animDots.js"></script>
     <script src="assets/JS/shBrushJScript.js"></script>
     <script>SyntaxHighlighter.all()</script>
+    <script src="assets/js/jquery.ajaxchimp.js"></script>
+    <script src="assets/JS/animDots.js"></script>
     <!-- Definity JS -->
     <script src="assets/js/main.js"></script>
 
